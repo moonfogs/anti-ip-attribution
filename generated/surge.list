@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.1 552f70ae87720f594be2c436ca152038fdbd627b
+# anti-ip-attribution surge.list v0.3.1 8ab399eb8fa6e905da51800daa1129064680b719
 # https://github.com/SunsetMkt/anti-ip-attribution
 # Surge分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -41,6 +41,7 @@ DOMAIN-KEYWORD,-core-c-hl
 DOMAIN-KEYWORD,-normal-lf
 DOMAIN-KEYWORD,-normal-c-lf
 DOMAIN-KEYWORD,-core-c-lf
+DOMAIN-SUFFIX,amemv.com
 DOMAIN,sso.douyin.com
 DOMAIN,www.douyin.com
 DOMAIN-SUFFIX,snssdk.com
