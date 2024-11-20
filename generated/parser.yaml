@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 8ab399eb8fa6e905da51800daa1129064680b719
+# anti-ip-attribution parser.yaml v0.3.1 e95ef2cc525e935b8b6923fb156d46ece077470e
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -43,8 +43,8 @@ parsers:
     - "DOMAIN-KEYWORD,normal-lq,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,search-quic-lq,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,search-lq,IP\u5F52\u5C5E\u5730"
-    - DOMAIN-SUFFIX,zijieapi.com,DIRECT
-    - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+    - "DOMAIN-SUFFIX,zijieapi.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-SUFFIX,ecombdapi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-normal-hl,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-normal-c-hl,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-core-c-hl,IP\u5F52\u5C5E\u5730"
@@ -55,6 +55,10 @@ parsers:
     - "DOMAIN,sso.douyin.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,www.douyin.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,snssdk.com,IP\u5F52\u5C5E\u5730"
+    - DOMAIN-SUFFIX,douyincdn.com,DIRECT
+    - DOMAIN-SUFFIX,zjcdn.com,DIRECT
+    - DOMAIN-SUFFIX,douyinliving.com,DIRECT
+    - DOMAIN-SUFFIX,byteimg.com,DIRECT
     - "DOMAIN-SUFFIX,xiaohongshu.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,xiaohongshu,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,114.55.236.88/32,IP\u5F52\u5C5E\u5730"

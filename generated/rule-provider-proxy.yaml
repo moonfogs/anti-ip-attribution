@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 8ab399eb8fa6e905da51800daa1129064680b719
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 e95ef2cc525e935b8b6923fb156d46ece077470e
 # https://github.com/SunsetMkt/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -13,6 +13,8 @@ payload:
 - DOMAIN-KEYWORD,normal-lq
 - DOMAIN-KEYWORD,search-quic-lq
 - DOMAIN-KEYWORD,search-lq
+- DOMAIN-SUFFIX,zijieapi.com
+- DOMAIN-SUFFIX,ecombdapi.com
 - DOMAIN-KEYWORD,-normal-hl
 - DOMAIN-KEYWORD,-normal-c-hl
 - DOMAIN-KEYWORD,-core-c-hl

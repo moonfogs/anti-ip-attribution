@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 8ab399eb8fa6e905da51800daa1129064680b719
+# anti-ip-attribution quantumultx-domesticsocial.list v0.3.1 e95ef2cc525e935b8b6923fb156d46ece077470e
 # https://github.com/SunsetMkt/anti-ip-attribution
 # QuantumultX分流规则，策略组名称为DomesticSocial
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -33,8 +33,8 @@ DOMAIN-KEYWORD,normal-c-lq,DomesticSocial
 DOMAIN-KEYWORD,normal-lq,DomesticSocial
 DOMAIN-KEYWORD,search-quic-lq,DomesticSocial
 DOMAIN-KEYWORD,search-lq,DomesticSocial
-DOMAIN-SUFFIX,zijieapi.com,DIRECT
-DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+DOMAIN-SUFFIX,zijieapi.com,DomesticSocial
+DOMAIN-SUFFIX,ecombdapi.com,DomesticSocial
 DOMAIN-KEYWORD,-normal-hl,DomesticSocial
 DOMAIN-KEYWORD,-normal-c-hl,DomesticSocial
 DOMAIN-KEYWORD,-core-c-hl,DomesticSocial
@@ -45,6 +45,10 @@ DOMAIN-SUFFIX,amemv.com,DomesticSocial
 DOMAIN,sso.douyin.com,DomesticSocial
 DOMAIN,www.douyin.com,DomesticSocial
 DOMAIN-SUFFIX,snssdk.com,DomesticSocial
+DOMAIN-SUFFIX,douyincdn.com,DIRECT
+DOMAIN-SUFFIX,zjcdn.com,DIRECT
+DOMAIN-SUFFIX,douyinliving.com,DIRECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,xiaohongshu.com,DomesticSocial
 DOMAIN-KEYWORD,xiaohongshu,DomesticSocial
 IP-CIDR,114.55.236.88/32,DomesticSocial

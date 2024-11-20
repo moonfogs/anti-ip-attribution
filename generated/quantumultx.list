@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.1 8ab399eb8fa6e905da51800daa1129064680b719
+# anti-ip-attribution quantumultx.list v0.3.1 e95ef2cc525e935b8b6923fb156d46ece077470e
 # https://github.com/SunsetMkt/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN,httpdns.bilivideo.com,REJECT
@@ -33,8 +33,8 @@ DOMAIN-KEYWORD,normal-c-lq,IP
 DOMAIN-KEYWORD,normal-lq,IP
 DOMAIN-KEYWORD,search-quic-lq,IP
 DOMAIN-KEYWORD,search-lq,IP
-DOMAIN-SUFFIX,zijieapi.com,DIRECT
-DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+DOMAIN-SUFFIX,zijieapi.com,IP
+DOMAIN-SUFFIX,ecombdapi.com,IP
 DOMAIN-KEYWORD,-normal-hl,IP
 DOMAIN-KEYWORD,-normal-c-hl,IP
 DOMAIN-KEYWORD,-core-c-hl,IP
@@ -45,6 +45,10 @@ DOMAIN-SUFFIX,amemv.com,IP
 DOMAIN,sso.douyin.com,IP
 DOMAIN,www.douyin.com,IP
 DOMAIN-SUFFIX,snssdk.com,IP
+DOMAIN-SUFFIX,douyincdn.com,DIRECT
+DOMAIN-SUFFIX,zjcdn.com,DIRECT
+DOMAIN-SUFFIX,douyinliving.com,DIRECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,xiaohongshu.com,IP
 DOMAIN-KEYWORD,xiaohongshu,IP
 IP-CIDR,114.55.236.88/32,IP
